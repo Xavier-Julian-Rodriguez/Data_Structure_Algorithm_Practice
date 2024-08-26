@@ -1,5 +1,6 @@
 class Main {
     public static void main (String[] args) {
-        System.out.println("Hello World");
+        LinkedList myLinkedList = new LinkedList(4);
+        myLinkedList.printAll();
     }
 }
