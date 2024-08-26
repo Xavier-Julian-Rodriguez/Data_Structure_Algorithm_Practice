@@ -4,5 +4,9 @@ class Main {
         
         myLinkedList.appendNode(2);
         myLinkedList.printAll();
+
+        System.out.println(myLinkedList.removeLastNode().value);
+        System.out.println(myLinkedList.removeLastNode().value);
+        System.out.println(myLinkedList.removeLastNode());
     }
 }

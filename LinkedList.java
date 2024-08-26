@@ -53,9 +53,7 @@ public class LinkedList {
         //for a null list add print statement
         //for a one node list remove it and return it
 
-        Node removed_node = null;
         if (length == 0) {
-            System.out.println("Node list is empty. Nothing to remove.");
             return null;
         }
         Node temp = head;
