@@ -1,3 +1,4 @@
+
 public class LinkedList {
     private Node head;
     private Node tail;
@@ -29,6 +30,22 @@ public class LinkedList {
 
     public int getLength() {
         return length;
+    }
+
+    public void appendNode(int value) {
+        Node newNode = new Node(value);
+        if (length == 0) {
+            head = newNode;
+            tail = newNode;
+            length = 1;
+        } else {
+            // create new node
+            // point last node to new node;
+            // move tail to new node
+            tail.next = newNode;
+            tail = newNode;
+        }
+        length++;
     }
 
     public void printList() {
