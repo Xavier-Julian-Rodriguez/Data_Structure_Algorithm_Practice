@@ -10,5 +10,7 @@ class Main {
         
         myLinkedList.prependNode(3);
         myLinkedList.printAll();
+        myLinkedList.removeFirstNode();
+        myLinkedList.printAll();
     }
 }
