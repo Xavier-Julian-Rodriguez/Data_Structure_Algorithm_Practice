@@ -3,10 +3,12 @@ class Main {
         LinkedList myLinkedList = new LinkedList(1);
         
         myLinkedList.appendNode(2);
+        
+        // System.out.println(myLinkedList.removeLastNode().value);
+        // System.out.println(myLinkedList.removeLastNode().value);
+        // System.out.println(myLinkedList.removeLastNode());
+        
+        myLinkedList.prependNode(3);
         myLinkedList.printAll();
-
-        System.out.println(myLinkedList.removeLastNode().value);
-        System.out.println(myLinkedList.removeLastNode().value);
-        System.out.println(myLinkedList.removeLastNode());
     }
 }
