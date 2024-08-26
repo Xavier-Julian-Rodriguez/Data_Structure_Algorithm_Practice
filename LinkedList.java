@@ -48,6 +48,34 @@ public class LinkedList {
         length++;
     }
 
+    public Node removeLastNode() {
+        //for a multi list remove last node and return it
+        //for a null list add print statement
+        //for a one node list remove it and return it
+
+        Node removed_node = null;
+        if (length == 0) {
+            System.out.println("Node list is empty. Nothing to remove.");
+            return null;
+        }
+        Node temp = head;
+        Node previous = head;
+        while(temp.next != null) {
+            previous = temp;
+            temp = temp.next;
+        }
+
+        tail = previous;
+        tail.next = null;
+        length--; 
+        if(length == 0) {
+            head = null;
+            tail = null;
+        };
+        return temp;
+    }
+    
+
     public void printList() {
         Node temp = head;
         while(temp != null) {
