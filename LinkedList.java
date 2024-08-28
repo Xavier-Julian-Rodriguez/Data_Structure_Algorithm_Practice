@@ -101,6 +101,50 @@ public class LinkedList {
         return temp;
     }
 
+    public Node getNode(int index) {
+        if(index < 0 || index > length) {
+            return null;
+        }
+        Node temp = head;
+        for(int i = 0; i < index; i++) {
+            temp = temp.next;
+        }
+        return temp;
+    }
+
+    public boolean setNode(int index, int value) {
+        if(index < 0 || index > length) {
+            return false;
+        }
+        Node temp = head;
+
+        for(int i = 0; i < index; i++) {
+            temp = temp.next;
+        }
+        temp.value = value;
+        return true;
+    }
+
+    public boolean insertNode(int index, int value) {
+        if(index < 0 || index > length) {
+            return false;
+        }
+        if(index == 0) {
+            prependNode(value);
+            return true;
+        }
+        if(index == length) {
+            appendNode(value);
+            return true;
+        }
+        Node newNode = new Node(value);
+        Node temp = getNode(index - 1);
+        newNode.next = temp.next;
+        temp.next = newNode;
+        length++;
+        return true;
+    }
+
     public void printList() {
         Node temp = head;
         while(temp != null) {
