@@ -158,7 +158,6 @@ public class LinkedList {
             return removeLastNode();
         }
 
-
         Node prev = getNode(index - 1);
         Node temp = prev.next;
         prev.next = temp.next;
@@ -167,7 +166,21 @@ public class LinkedList {
         return temp;
     }
 
-    
+    public void reverseList() {
+        Node temp = head;
+        head = tail;
+        tail = temp;
+        Node prev = null;
+        Node after = temp.next;
+
+        for(int i = 0; i < length; i++) {
+            after = temp.next;
+            temp.next = prev;
+            prev = temp;
+            temp = after;
+        }
+
+    }
 
     public void printList() {
         Node temp = head;

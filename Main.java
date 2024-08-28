@@ -19,8 +19,11 @@ class Main {
 
         myLinkedList.insertNode(3, 4);
         
+        //myLinkedList.printAll();
+        //System.out.println(myLinkedList.removeNode(1).value);
+
+        myLinkedList.reverseList();
         myLinkedList.printAll();
-        System.out.println(myLinkedList.removeNode(1).value);
 
 
     }
