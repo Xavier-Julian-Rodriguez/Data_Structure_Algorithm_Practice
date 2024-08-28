@@ -12,12 +12,15 @@ class Main {
         myLinkedList.prependNode(3);
         myLinkedList.printAll();
         System.out.println("getNode method:");
-        System.out.println(myLinkedList.getNode(1));
-        System.out.println(myLinkedList.setNode(0, 1));
-        System.out.println(myLinkedList.setNode(1, 2));
-        System.out.println(myLinkedList.setNode(2, 3));
+        myLinkedList.getNode(1);
+        myLinkedList.setNode(0, 1);
+        myLinkedList.setNode(1, 2);
+        myLinkedList.setNode(2, 3);
 
+        myLinkedList.insertNode(3, 4);
+        
         myLinkedList.printAll();
+        System.out.println(myLinkedList.removeNode(1).value);
 
 
     }
