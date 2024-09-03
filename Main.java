@@ -32,9 +32,13 @@ class Main {
 
         myDoublyLinkedList.appendNode(3);
         myDoublyLinkedList.prependNode(1);
-        myDoublyLinkedList.getHead();
-        myDoublyLinkedList.getTail();
-        myDoublyLinkedList.getLength();
+        // myDoublyLinkedList.getHead();
+        // myDoublyLinkedList.getTail();
+        // myDoublyLinkedList.getLength();
+        myDoublyLinkedList.insertNode(99, 2);
+        myDoublyLinkedList.printList();
+        
+        myDoublyLinkedList.removeNode(2);
         myDoublyLinkedList.printList();
 
     }
