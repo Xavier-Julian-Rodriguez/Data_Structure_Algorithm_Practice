@@ -28,10 +28,13 @@ class Main {
 
 
         // DoublyLinkedList practice
-        DoublyLinkedList myDoublyLinkedList = new DoublyLinkedList(7);
+        DoublyLinkedList myDoublyLinkedList = new DoublyLinkedList(1);
+
+        myDoublyLinkedList.appendNode(2);
         myDoublyLinkedList.getHead();
         myDoublyLinkedList.getTail();
         myDoublyLinkedList.getLength();
+        myDoublyLinkedList.printList();
 
     }
 }
