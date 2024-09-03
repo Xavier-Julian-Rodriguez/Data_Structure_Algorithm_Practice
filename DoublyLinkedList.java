@@ -123,5 +123,38 @@ public class DoublyLinkedList {
             return temp;
         }
     }
+
+    public boolean setNode(int value, int index) {
+        Node temp = getIndex(index);
+        if(temp != null) {
+            temp.value = value;
+            return true;
+        }
+        return false;
+    }
+
+    public boolean insertNode(int value, int index) {
+        Node temp = getIndex(index);
+        Node newNode = new Node(value);
+        if(index < 0 || index > length) {
+            return false;
+        }
+        if(index == 0) {
+            prependNode(value);
+            return true;
+        }
+        if(index == length) {
+            appendNode(value);
+            return true;
+        }
+        Node prev = temp.prev;
+        prev.next = newNode;
+        newNode.prev = prev;
+        newNode.next = temp;
+        temp.prev = newNode;
+        length++;
+
+        return true;
+    }
     
 }

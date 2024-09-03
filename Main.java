@@ -37,8 +37,5 @@ class Main {
         myDoublyLinkedList.getLength();
         myDoublyLinkedList.printList();
 
-        System.out.println(myDoublyLinkedList.getIndex(1).value);
-
-
     }
 }
