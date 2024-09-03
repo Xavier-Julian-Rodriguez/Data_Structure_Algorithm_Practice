@@ -103,5 +103,25 @@ public class DoublyLinkedList {
         }
         return temp;
     }
+
+    public Node getIndex(int index) {
+        Node temp = head;
+
+        if(length == 0) {
+            return null;
+        } else {
+            if(index < length / 2) {
+                for(int i = 0; i < index; i++) {
+                    temp = temp.next;
+                }
+            } else {
+                temp = tail;
+                for(int i = length - 1; i > index; i--) {
+                    temp = temp.prev;
+                }
+            }
+            return temp;
+        }
+    }
     
 }

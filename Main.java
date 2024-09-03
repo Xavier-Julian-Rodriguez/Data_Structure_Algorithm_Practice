@@ -32,10 +32,12 @@ class Main {
 
         myDoublyLinkedList.appendNode(3);
         myDoublyLinkedList.prependNode(1);
-         myDoublyLinkedList.getHead();
+        myDoublyLinkedList.getHead();
         myDoublyLinkedList.getTail();
         myDoublyLinkedList.getLength();
         myDoublyLinkedList.printList();
+
+        System.out.println(myDoublyLinkedList.getIndex(1).value);
 
 
     }
