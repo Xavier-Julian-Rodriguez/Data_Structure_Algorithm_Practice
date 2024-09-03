@@ -36,5 +36,6 @@ class Main {
         myDoublyLinkedList.getLength();
         myDoublyLinkedList.printList();
 
+
     }
 }
