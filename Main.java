@@ -36,6 +36,8 @@ class Main {
 
         // ----------> Stacks & Queues practice <-------------------
         Stack myStack = new Stack(1);
+        myStack.pushNode(2);
+        myStack.pushNode(3);
         myStack.getTop();
         myStack.getHeight();
         myStack.printStack();
