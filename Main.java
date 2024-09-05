@@ -34,12 +34,20 @@ class Main {
         // myDoublyLinkedList.removeNode(2);
         // myDoublyLinkedList.printList();
 
-        // ----------> Stacks & Queues practice <-------------------
-        Stack myStack = new Stack(1);
-        myStack.pushNode(2);
-        myStack.pushNode(3);
-        myStack.getTop();
-        myStack.getHeight();
-        myStack.printStack();
+        // ----------> Stacks practice <-------------------
+        // Stack myStack = new Stack(1);
+        // myStack.pushNode(2);
+        // myStack.pushNode(3);
+        // myStack.getTop();
+        // myStack.getHeight();
+        // myStack.printStack();
+
+        // ----------> Queues practice <-------------------
+        Queues myQueue = new Queues(1);
+        myQueue.enqueue(2);
+        myQueue.enqueue(3);
+        myQueue.getFirst();
+        myQueue.getLast();
+        myQueue.printList();
     }
 }
