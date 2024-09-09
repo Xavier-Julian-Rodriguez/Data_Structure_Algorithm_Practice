@@ -60,5 +60,6 @@ class Main {
         myBST.insertInto(59);
         myBST.insertInto(83);
         System.out.println("Root Node: " + myBST.root.left.left.value);
+        System.out.println(myBST.contains(83));
     }
 }
