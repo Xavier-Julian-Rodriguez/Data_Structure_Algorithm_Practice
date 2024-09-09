@@ -68,5 +68,6 @@ class Main {
         myHashTable.set("tile", 50);
         myHashTable.set("lumber", 80);
         myHashTable.printTable();
+        System.out.println(myHashTable.keys());
     }
 }

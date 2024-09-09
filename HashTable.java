@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 public class HashTable {
 
     private int size = 7;
@@ -62,5 +65,17 @@ public class HashTable {
             temp = temp.next; 
         }
         return 0;
+    }
+
+    public ArrayList keys() {
+        ArrayList<String> allKeys = new ArrayList<>();
+        for(int i = 0; i < datamap.length; i++) {
+            Node temp = datamap[i];
+            while(temp != null) {
+                allKeys.add(temp.key);
+                temp = temp.next;
+            }
+        }
+        return allKeys;
     }
 }
