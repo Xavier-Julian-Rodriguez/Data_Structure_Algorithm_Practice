@@ -26,7 +26,41 @@ public class HashTable {
                 temp = temp.next;
             }
         }
-
     }
 
+    private int hash(String key) {
+        int hash = 0;
+        char[] keyChars = key.toCharArray();
+        for(int i = 0; i < keyChars.length; i++) {
+            int asciiValue = keyChars[i];
+            hash = (hash + asciiValue * 23) % datamap.length;
+        }
+        return hash;
+    }
+
+    public void set(String key, int value) {
+        int index = hash(key);
+        Node newNode = new Node(key, value);
+        if(datamap[index] == null) {
+            datamap[index] = newNode;
+        } else {
+            Node temp = datamap[index];
+            while(temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = newNode;
+        }
+    }
+
+    public int get(String key) {
+        int index = hash(key);
+        Node temp = datamap[index];
+        while(temp != null) {
+            if (temp.key == key) {
+                return temp.value;
+            }
+            temp = temp.next; 
+        }
+        return 0;
+    }
 }
