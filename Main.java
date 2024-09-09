@@ -52,14 +52,18 @@ class Main {
 
 
         // ----------> Binary Search Tree practice <-------------------
-        BinarySearchTree myBST = new BinarySearchTree();
-        myBST.insertInto(46);
-        myBST.insertInto(26);
-        myBST.insertInto(77);
-        myBST.insertInto(18);
-        myBST.insertInto(59);
-        myBST.insertInto(83);
-        System.out.println("Root Node: " + myBST.root.left.left.value);
-        System.out.println(myBST.contains(83));
+        // BinarySearchTree myBST = new BinarySearchTree();
+        // myBST.insertInto(46);
+        // myBST.insertInto(26);
+        // myBST.insertInto(77);
+        // myBST.insertInto(18);
+        // myBST.insertInto(59);
+        // myBST.insertInto(83);
+        // System.out.println("Root Node: " + myBST.root.left.left.value);
+        // System.out.println(myBST.contains(83));
+
+        // ----------> Hash Table practice <-------------------
+        HashTable myHashTable = new HashTable();
+        myHashTable.printTable();
     }
 }
