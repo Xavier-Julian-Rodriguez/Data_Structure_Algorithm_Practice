@@ -1,3 +1,7 @@
+
+import algorithms.BubbleSort;
+import java.util.Arrays;
+
 class Main {
     public static void main (String[] args) {
         // ----------> LinkedList practice <-------------------
@@ -63,11 +67,18 @@ class Main {
         // System.out.println(myBST.contains(83));
 
         // ----------> Hash Table practice <-------------------
-        HashTable myHashTable = new HashTable();
-        myHashTable.set("nails", 100);
-        myHashTable.set("tile", 50);
-        myHashTable.set("lumber", 80);
-        myHashTable.printTable();
-        System.out.println(myHashTable.keys());
+        // HashTable myHashTable = new HashTable();
+        // myHashTable.set("nails", 100);
+        // myHashTable.set("tile", 50);
+        // myHashTable.set("lumber", 80);
+        // myHashTable.printTable();
+        // System.out.println(myHashTable.keys());
+
+        //Bubble Sort Practice
+        int[] array = {5, 9, 2, 3, 7, 1, 6, 8, 4};
+
+        BubbleSort.bubbleSort(array);
+        System.out.println(Arrays.toString(array));
+        
     }
 }
