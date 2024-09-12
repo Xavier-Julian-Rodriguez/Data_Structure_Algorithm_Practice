@@ -1,3 +1,4 @@
+package src.datastructures;
 public class Stack {
 
     private Node top;

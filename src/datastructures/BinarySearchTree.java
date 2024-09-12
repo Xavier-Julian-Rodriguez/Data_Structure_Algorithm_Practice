@@ -1,3 +1,4 @@
+package src.datastructures;
 public class BinarySearchTree {
     Node root;
     

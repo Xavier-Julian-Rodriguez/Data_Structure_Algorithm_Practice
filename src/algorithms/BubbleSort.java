@@ -1,4 +1,4 @@
-package algorithms;
+package src.algorithms;
 
 public class BubbleSort {
     public static void bubbleSort(int[] array) {

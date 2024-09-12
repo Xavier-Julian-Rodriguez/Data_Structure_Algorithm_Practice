@@ -1,6 +1,7 @@
+package src.main;
 
-import algorithms.BubbleSort;
 import java.util.Arrays;
+import src.algorithms.SelectionSort;
 
 class Main {
     public static void main (String[] args) {
@@ -77,7 +78,10 @@ class Main {
         //Bubble Sort Practice
         int[] array = {5, 9, 2, 3, 7, 1, 6, 8, 4};
 
-        BubbleSort.bubbleSort(array);
+        // BubbleSort.bubbleSort(array);
+        // System.out.println(Arrays.toString(array));
+
+        SelectionSort.selectionSort(array);
         System.out.println(Arrays.toString(array));
         
     }
