@@ -1,7 +1,7 @@
 package src.main;
 
 import java.util.Arrays;
-import src.algorithms.InsertionSort;
+import src.algorithms.MergeSort;
 
 class Main {
     public static void main (String[] args) {
@@ -84,8 +84,11 @@ class Main {
         // SelectionSort.selectionSort(array);
         // System.out.println(Arrays.toString(array));
 
-        InsertionSort.insertionSort(array);
-        System.out.println(Arrays.toString(array));
+        // InsertionSort.insertionSort(array);
+        // System.out.println(Arrays.toString(array));
+
+        int[] sortedArray = MergeSort.mergeSort(array);
+        System.out.println(Arrays.toString(sortedArray));
         
     }
 }
