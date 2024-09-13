@@ -1,7 +1,7 @@
 package src.main;
 
 import java.util.Arrays;
-import src.algorithms.SelectionSort;
+import src.algorithms.InsertionSort;
 
 class Main {
     public static void main (String[] args) {
@@ -81,7 +81,10 @@ class Main {
         // BubbleSort.bubbleSort(array);
         // System.out.println(Arrays.toString(array));
 
-        SelectionSort.selectionSort(array);
+        // SelectionSort.selectionSort(array);
+        // System.out.println(Arrays.toString(array));
+
+        InsertionSort.insertionSort(array);
         System.out.println(Arrays.toString(array));
         
     }
